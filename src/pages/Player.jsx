@@ -27,7 +27,7 @@ const Player = () => {
       }, []);
       
     
-    document.title = `Tiger Movies | ${moviedet.title}`
+    document.title = `Tigex Movies | ${moviedet.title}`
 
     return (
       <>
