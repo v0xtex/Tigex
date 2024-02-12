@@ -7,7 +7,7 @@ import { HiMenuAlt1, HiX } from "react-icons/hi";
 import User from '../assets/images/User.jpg';
 import { auth } from '../../firebase';
 import { toast } from "react-toastify";
-import FAQ from "../path/to/FAQ";
+import FAQ from "../pages/FAQ";
 
 function Navbar() {
 
