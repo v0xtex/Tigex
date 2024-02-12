@@ -15,8 +15,8 @@ function Container() {
   }, []);
 
   return (
-    <h1>Tigex c'est {visits} utilisateurs !</h1>
     <section>
+      <h1>Tigex c'est {visits} utilisateurs !</h1>
       <Searchbar />
       {query ? <Search query={query} /> : <Movies />}
     </section>
