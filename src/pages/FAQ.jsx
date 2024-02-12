@@ -30,11 +30,11 @@ function FAQ() {
       </Helmet>
 
       <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
-        <motion.div
+        <motion.div>
           layout
           className="w-full md:p-2 flex flex-wrap relative justify-evenly md:justify-around">
           <div className="w-full md:w-3/4">
-            <center></center><h1 className="text-4xl font-bold text-white mb-5">FAQ</h1></div></center>
+            <center><h1 className="text-4xl font-bold text-white mb-5">FAQ</h1></div></center>
             {faqData.map((faq, index) => (
               <div key={index} className="mb-5">
                 <h2 className="text-xl font-bold text-white mb-2"> • {faq.question}</h2>
