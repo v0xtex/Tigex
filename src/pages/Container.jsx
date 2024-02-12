@@ -17,7 +17,6 @@ function Container() {
   return (
     <section>
       <Searchbar />
-      <center><h1>TIGEX, C'EST {visits} UTILISATEURS</h1></center>
       {query ? <Search query={query} /> : <Movies />}
     </section>
   )
