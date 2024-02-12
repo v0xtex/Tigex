@@ -26,13 +26,11 @@ function Container() {
   }, []);
 
   return (
-    <div>
-      <h1>Tigex c'est {visits} utilisateurs !</h1>
-      <section>
-        <Searchbar />
-        {query ? <Search query={query} /> : <Movies />}
-      </section>
-    </div>
+    <h1>Tigex c'est {visits} utilisateurs !</h1>
+    <section>
+      <Searchbar />
+      {query ? <Search query={query} /> : <Movies />}
+    </section>
   )
 }
 
