@@ -34,7 +34,7 @@ function FAQ() {
           layout
           className="w-full md:p-2 flex flex-wrap relative justify-evenly md:justify-around">
           <div className="w-full md:w-3/4">
-            <center><h1 className="text-4xl font-bold text-white mb-5">FAQ</h1></center></div>
+            <center><h1 className="text-4xl font-bold text-white mb-5">FAQ</h1></center>
             {faqData.map((faq, index) => (
               <div key={index} className="mb-5">
                 <h2 className="text-xl font-bold text-white mb-2">{faq.question}</h2>
