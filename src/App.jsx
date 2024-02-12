@@ -1,12 +1,13 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { Detail } from './components/Detail';
 import Login from './auth/Login';
-import Navbar from './components/Navbar'
-import Container from './pages/Container'
+import Navbar from './components/Navbar';
+import Container from './pages/Container';
 import Trending from './pages/Trending';
 import Upcoming from './pages/Upcoming';
 import Favorite from './pages/Favoritepage';
+import FAQ from './pages/FAQ'; // Importez le composant FAQ
 import { MovieProvider } from "./Contextpage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,7 +17,6 @@ import { Helmet } from "react-helmet";
 import logo from "./assets/images/logo.png"
 
 function App() {
-
   return (
     <MovieProvider>
       <Helmet>
@@ -44,14 +44,15 @@ function App() {
           <Route path='/upcoming' element={<Upcoming />} />
           <Route path='/moviedetail/:id' element={<Detail />} />
           <Route path="/favorite" element={<Favorite />} />
-          <Route path="/player/:id/:title" element={<Player />} /> {/*Route-1 For Player, Title is just for beauty of url, it is not used anywhere.*/}
-          <Route path="/player/:id" element={<Player />} /> {/*Route-2 For Player. Movie still available even if someone removes Title from end of the url.*/}
+          <Route path="/player/:id/:title" element={<Player />} />
+          <Route path="/player/:id" element={<Player />} />
           <Route path="/search/:query" element={<Container/>}/>
           <Route path="/search/" element={<Container/>}/>
+          <Route path="/faq" element={<FAQ />} /> {/* Ajoutez cette ligne pour la page FAQ */}
         </Routes>
       </div>
     </MovieProvider>
   )
 }
 
-export default App
+export default App;
